@@ -1,5 +1,4 @@
 Lab 3:Hệ thống giám sát và cảnh báo người chạy sử dụng ESP32, BMP180, FreeRTOS và MQTT
-ESP32 + FreeRTOS + MQTT
 
 
 - Họ tên - Lớp:Lê Phú Duẩn-  KỸ THUẬT TIN HỌC CÔNG NGHIỆP 2 - K64
@@ -7,11 +6,13 @@ ESP32 + FreeRTOS + MQTT
 
 
 #1. Giới thiệu dự án
-Runner Monitoring System là hệ thống giám sát các thông số môi trường trong quá trình người chạy vận động, sử dụng ESP32 kết hợp với cảm biến BMP180.
-Hệ thống có nhiệm vụ đo nhiệt độ, áp suất khí quyển và tính toán độ cao. Dữ liệu được ESP32 xử lý, sau đó gửi qua WiFi lên MQTT Broker để hiển thị trên Web Dashboard.
-Ngoài chức năng giám sát, hệ thống còn có khả năng cảnh báo tự động bằng LED và Buzzer khi nhiệt độ hoặc độ thay đổi độ cao vượt ngưỡng cài đặt. Người dùng cũng có thể điều khiển LED và Buzzer trực tiếp trên giao diện Web
+
+-Runner Monitoring System là hệ thống giám sát các thông số môi trường trong quá trình người chạy vận động, sử dụng ESP32 kết hợp với cảm biến BMP180.
+-Hệ thống có nhiệm vụ đo nhiệt độ, áp suất khí quyển và tính toán độ cao. Dữ liệu được ESP32 xử lý, sau đó gửi qua WiFi lên MQTT Broker để hiển thị trên Web Dashboard.
+-Ngoài chức năng giám sát, hệ thống còn có khả năng cảnh báo tự động bằng LED và Buzzer khi nhiệt độ hoặc độ thay đổi độ cao vượt ngưỡng cài đặt. Người dùng cũng có thể điều khiển --LED và Buzzer trực tiếp trên giao diện Web
 
  2. Chức năng chính
+
 - Đo nhiệt độ và áp suất khí quyển bằng cảm biến BMP180.
 - Tính toán độ cao dựa trên áp suất khí quyển.
 - Theo dõi sự thay đổi độ cao so với lần đo đầu tiên.
@@ -167,6 +168,7 @@ Dự án được chia thành các thư mục để dễ quản lý và tìm ki�
 
 
 Runner-Monitoring-System/
+
 │
 ├── README.md
 │
