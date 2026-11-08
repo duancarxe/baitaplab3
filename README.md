@@ -82,6 +82,7 @@ Hệ thống sử dụng 3 task FreeRTOS, mỗi task đảm nhận một công v
  5. Nguyên lý hoạt động và cảnh báo
 
  5.1. Giám sát độ cao
+ 
 Khi hệ thống bắt đầu hoạt động, ESP32 lưu lại độ cao ở lần đo đầu tiên làm giá trị ban đầu.
 Ở những lần đo tiếp theo, hệ thống tính độ thay đổi độ cao:
 Nếu độ thay đổi độ cao lớn hơn hoặc bằng 100m, hệ thống kích hoạt cảnh báo.
