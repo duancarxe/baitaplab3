@@ -168,17 +168,17 @@ Sau khi hoàn thành, hệ thống đáp ứng các chức năng chính:
 Dự án được chia thành các thư mục để dễ quản lý và tìm kiếm file.
 
 
-Runner-Monitoring-System/
-│
-├── README.md
+```
+├── README.md                  # Giới thiệu dự án
 ├── ESP32/
-│   └── runner_monitoring.ino
+│   └── runner_monitoring.ino   # Code ESP32 (FreeRTOS + MQTT)
 ├── Web/
-│   └── index.html
+│   └── index.html             # Giao diện Web Dashboard
 ├── Simulation/
-│   └── diagram.json
+│   └── diagram.json           # Sơ đồ mạch Wokwi
 ├── Images/
-│   ├── dashboard.png
-│   └── simulation.png
-└── libraries.txt
-```</WritingBlock>
+│   ├── dashboard.png          # Hình ảnh Dashboard
+│   └── simulation.png         # Hình ảnh mô phỏng
+└── libraries.txt              # Thư viện sử dụng
+```
+
