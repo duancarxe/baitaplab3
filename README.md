@@ -4,7 +4,6 @@ Lab 3:Hệ thống giám sát và cảnh báo người chạy sử dụng ESP32,
 - Họ tên - Lớp:Lê Phú Duẩn-  KỸ THUẬT TIN HỌC CÔNG NGHIỆP 2 - K64
  
 - Link project Wokwi: [Xem mô phỏng trên Wokwi](https://wokwi.com/projects/480044935015154689)
-- word:[b.docx](https://github.com/user-attachments/files/34544174/b.docx)
 
 
 
