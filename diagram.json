@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "author": "Duẩn Lê Phú",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": -4.76, "attrs": {} },
+    {
+      "type": "board-bmp180",
+      "id": "bmp1",
+      "top": -90.56,
+      "left": 29.06,
+      "attrs": { "pressure": "88529", "temperature": "37.1" }
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": 12,
+      "left": -209.4,
+      "attrs": { "volume": "0.1" }
+    },
+    { "type": "wokwi-led", "id": "led1", "top": 44.4, "left": -121, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 99.95,
+      "left": -76.8,
+      "attrs": { "value": "330" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "bmp1:VCC", "esp:3V3", "red", [ "h0", "v-38.4", "h-96" ] ],
+    [ "bmp1:GND", "esp:GND.2", "black", [ "h19.2", "v105.79" ] ],
+    [ "bmp1:SDA", "esp:21", "green", [ "h57.6", "v9.79" ] ],
+    [ "bmp1:SCL", "esp:22", "green", [ "h67.2", "v105.79" ] ],
+    [ "esp:25", "r1:2", "green", [ "v0" ] ],
+    [ "led1:A", "r1:1", "green", [ "v0" ] ],
+    [ "esp:GND.1", "led1:C", "black", [ "h0" ] ],
+    [ "bz1:2", "esp:26", "green", [ "v0" ] ],
+    [ "esp:GND.1", "bz1:1", "black", [ "h0" ] ]
+  ],
+  "dependencies": {}
+} 
