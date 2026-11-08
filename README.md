@@ -2,10 +2,11 @@ Lab 3:Hệ thống giám sát và cảnh báo người chạy sử dụng ESP32,
 
 
 - Họ tên - Lớp:Lê Phú Duẩn-  KỸ THUẬT TIN HỌC CÔNG NGHIỆP 2 - K64
+ 
 - Link project Wokwi: [Xem mô phỏng trên Wokwi](https://wokwi.com/projects/480044935015154689)
 
 
-#1. Giới thiệu dự án
+1. Giới thiệu dự án
 
 -Runner Monitoring System là hệ thống giám sát các thông số môi trường trong quá trình người chạy vận động, sử dụng ESP32 kết hợp với cảm biến BMP180.
 -Hệ thống có nhiệm vụ đo nhiệt độ, áp suất khí quyển và tính toán độ cao. Dữ liệu được ESP32 xử lý, sau đó gửi qua WiFi lên MQTT Broker để hiển thị trên Web Dashboard.
