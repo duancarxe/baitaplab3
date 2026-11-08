@@ -169,21 +169,16 @@ Dự án được chia thành các thư mục để dễ quản lý và tìm ki�
 
 
 Runner-Monitoring-System/
-
 │
 ├── README.md
-│
 ├── ESP32/
 │   └── runner_monitoring.ino
-│
 ├── Web/
 │   └── index.html
-│
 ├── Simulation/
 │   └── diagram.json
-│
 ├── Images/
 │   ├── dashboard.png
 │   └── simulation.png
-│
 └── libraries.txt
+
