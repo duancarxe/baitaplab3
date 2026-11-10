@@ -129,12 +129,19 @@
         color: #475569;
       }
 
+      .charts-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+      }
+
       .chart-card {
         background: white;
         padding: 20px;
         border-radius: 12px;
-        margin-bottom: 15px;
+        margin-bottom: 0;
         height: 330px;
+        min-width: 0;
       }
 
       .chart-container {
@@ -198,6 +205,12 @@
         color: #64748b;
         margin-top: 25px;
         font-size: 13px;
+      }
+
+      @media (max-width: 700px) {
+        .charts-grid {
+          grid-template-columns: 1fr;
+        }
       }
 
       @media (max-width: 600px) {
@@ -324,17 +337,19 @@
 
       <h2 class="section-title">4. Biểu đồ theo thời gian thực</h2>
 
-      <div class="chart-card">
-        <h3>Biểu đồ nhiệt độ (°C)</h3>
-        <div class="chart-container">
-          <canvas id="temperatureChart"></canvas>
+      <div class="charts-grid">
+        <div class="chart-card">
+          <h3>Biểu đồ nhiệt độ (°C)</h3>
+          <div class="chart-container">
+            <canvas id="temperatureChart"></canvas>
+          </div>
         </div>
-      </div>
 
-      <div class="chart-card">
-        <h3>Biểu đồ độ cao (m)</h3>
-        <div class="chart-container">
-          <canvas id="altitudeChart"></canvas>
+        <div class="chart-card">
+          <h3>Biểu đồ độ cao (m)</h3>
+          <div class="chart-container">
+            <canvas id="altitudeChart"></canvas>
+          </div>
         </div>
       </div>
 
