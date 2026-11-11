@@ -1,11 +1,15 @@
                          Lab 3:Hệ thống giám sát và cảnh báo người chạy sử dụng ESP32, BMP180, FreeRTOS và MQTT
 
 -Họ tên: Lê Phú Duẩn
+
 -MSV:231432190
+
 -Lớp: KỸ THUẬT ĐIỆN TỬ VÀ TIN HỌC CÔNG NGHIỆP 2 - K64
 
 -Link project Wokwi: [Xem mô phỏng trên Wokwi](https://wokwi.com/projects/480044935015154689)
+
 -Báo cáo: [Bao_cao_Lab3_De1.docx](https://github.com/user-attachments/files/34674955/Bao_cao_Lab3_De1.docx)
+
 -Video demo:[video_demo.zip](https://github.com/user-attachments/files/34676514/video_demo.zip)
 
 
