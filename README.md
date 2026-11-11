@@ -4,7 +4,8 @@
  
 - Link project Wokwi: [Xem mô phỏng trên Wokwi](https://wokwi.com/projects/480044935015154689)
   
-- Báo cáo: [Xem tại đây](Bao_cao_Lab3_De1.docx)
+- Báo cáo: [Bao_cao_Lab3_De1.docx](https://github.com/user-attachments/files/34674771/Bao_cao_Lab3_De1.docx)
+
 
 
 
