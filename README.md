@@ -1,4 +1,5 @@
-                         Lab 3:Hệ thống giám sát và cảnh báo người chạy sử dụng ESP32, BMP180, FreeRTOS và MQTT
+                           Lab 3 ĐỀ 1:Hệ thống giám sát và cảnh báo người chạy 
+                               sử dụng ESP32, BMP180, FreeRTOS và MQTT
 
 -Họ tên: Lê Phú Duẩn
 
