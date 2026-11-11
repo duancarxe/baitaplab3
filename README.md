@@ -1,10 +1,10 @@
                          Lab 3:Hệ thống giám sát và cảnh báo người chạy sử dụng ESP32, BMP180, FreeRTOS và MQTT
 
-- Họ tên - Lớp:Lê Phú Duẩn-  KỸ THUẬT TIN HỌC CÔNG NGHIỆP 2 - K64
+-Họ tên - Lớp:Lê Phú Duẩn-  KỸ THUẬT TIN HỌC CÔNG NGHIỆP 2 - K64
  
-- Link project Wokwi: [Xem mô phỏng trên Wokwi](https://wokwi.com/projects/480044935015154689)
+-Link project Wokwi: [Xem mô phỏng trên Wokwi](https://wokwi.com/projects/480044935015154689)
   
-- Báo cáo: [Bao_cao_Lab3_De1.docx](https://github.com/user-attachments/files/34674955/Bao_cao_Lab3_De1.docx)
+-Báo cáo: [Bao_cao_Lab3_De1.docx](https://github.com/user-attachments/files/34674955/Bao_cao_Lab3_De1.docx)
 
 
 
@@ -19,15 +19,15 @@
 
  2. Chức năng chính
 
-- Đo nhiệt độ và áp suất khí quyển bằng cảm biến BMP180.
-- Tính toán độ cao dựa trên áp suất khí quyển.
-- Theo dõi sự thay đổi độ cao so với lần đo đầu tiên.
-- Cảnh báo khi nhiệt độ hoặc độ thay đổi độ cao vượt ngưỡng.
-- Điều khiển LED và Buzzer tự động.
-- Điều khiển LED và Buzzer thủ công thông qua Web Dashboard.
-- Gửi dữ liệu cảm biến lên MQTT Broker bằng WiFi.
-- Hiển thị thông số và biểu đồ theo thời gian thực trên Website.
-- Sử dụng 3 task FreeRTOS để xử lý các công việc đồng thời.
+-Đo nhiệt độ và áp suất khí quyển bằng cảm biến BMP180.
+-Tính toán độ cao dựa trên áp suất khí quyển.
+-Theo dõi sự thay đổi độ cao so với lần đo đầu tiên.
+-Cảnh báo khi nhiệt độ hoặc độ thay đổi độ cao vượt ngưỡng.
+-Điều khiển LED và Buzzer tự động.
+-Điều khiển LED và Buzzer thủ công thông qua Web Dashboard.
+-Gửi dữ liệu cảm biến lên MQTT Broker bằng WiFi.
+-Hiển thị thông số và biểu đồ theo thời gian thực trên Website.
+-Sử dụng 3 task FreeRTOS để xử lý các công việc đồng thời.
 
 3. Sơ đồ kết nối phần cứng
 
@@ -41,10 +41,10 @@
 | Buzzer | GPIO 26 |
 
 Kết nối:
-- BMP180 giao tiếp với ESP32 thông qua chuẩn I2C.
-- LED được nối với GPIO25 thông qua điện trở 330Ω.
-- Buzzer được nối với GPIO26.
-- Các thiết bị sử dụng chung chân GND.
+-BMP180 giao tiếp với ESP32 thông qua chuẩn I2C.
+-LED được nối với GPIO25 thông qua điện trở 330Ω.
+-Buzzer được nối với GPIO26.
+-Các thiết bị sử dụng chung chân GND.
 
 ## 4. Kiến trúc FreeRTOS
 
@@ -112,10 +112,10 @@ Hệ thống sử dụng hai ngưỡng nhiệt độ:
 Hệ thống kết hợp cảnh báo tự động và điều khiển thủ công. Khi cảnh báo tự động vẫn còn, LED và Buzzer tiếp tục hoạt động dù người dùng gửi lệnh tắt thủ công.
 ## 6. Giao tiếp MQTT
 Hệ thống sử dụng HiveMQ làm MQTT Broker để truyền dữ liệu giữa ESP32 và Web Dashboard.
-- **Broker:** `broker.hivemq.com`
-- **ESP32:** TCP Port `1883`
-- **Web Dashboard:** WebSocket TLS Port `8884`
-- **WebSocket URL:** `wss://broker.hivemq.com:8884/mqtt`
+-**Broker:** `broker.hivemq.com`
+-**ESP32:** TCP Port `1883`
+-**Web Dashboard:** WebSocket TLS Port `8884`
+-**WebSocket URL:** `wss://broker.hivemq.com:8884/mqtt`
 ### Các Topic sử dụng
 
 | Topic | Chức năng |
@@ -147,26 +147,26 @@ Web Dashboard được xây dựng bằng HTML, CSS và JavaScript, sử dụng 
 
 Các chức năng chính:
 
-- Hiển thị nhiệt độ môi trường.
-- Hiển thị áp suất khí quyển.
-- Hiển thị độ cao hiện tại và độ thay đổi độ cao.
-- Theo dõi trạng thái cảnh báo.
-- Hiển thị biểu đồ nhiệt độ và độ cao theo thời gian thực.
-- Bật/tắt LED thông qua MQTT.
-- Bật/tắt Buzzer thông qua MQTT.
+-Hiển thị nhiệt độ môi trường.
+-Hiển thị áp suất khí quyển.
+-Hiển thị độ cao hiện tại và độ thay đổi độ cao.
+-Theo dõi trạng thái cảnh báo.
+-Hiển thị biểu đồ nhiệt độ và độ cao theo thời gian thực.
+-Bật/tắt LED thông qua MQTT.
+-Bật/tắt Buzzer thông qua MQTT.
 
 ## 8. Kết quả thực hiện
 
 Sau khi hoàn thành, hệ thống đáp ứng các chức năng chính:
 
-- ESP32 đọc được dữ liệu từ cảm biến BMP180.
-- Tính toán được độ cao và độ thay đổi độ cao.
-- Ba task FreeRTOS hoạt động theo đúng cấu hình Core đã thiết lập.
-- Dữ liệu được gửi lên MQTT Broker.
-- Web Dashboard nhận và hiển thị dữ liệu.
-- Biểu đồ nhiệt độ và độ cao được cập nhật theo thời gian thực.
-- LED và Buzzer hoạt động khi có cảnh báo.
-- Điều khiển thiết bị thủ công thông qua Website.
+-ESP32 đọc được dữ liệu từ cảm biến BMP180.
+-Tính toán được độ cao và độ thay đổi độ cao.
+-Ba task FreeRTOS hoạt động theo đúng cấu hình Core đã thiết lập.
+-Dữ liệu được gửi lên MQTT Broker.
+-Web Dashboard nhận và hiển thị dữ liệu.
+-Biểu đồ nhiệt độ và độ cao được cập nhật theo thời gian thực.
+-LED và Buzzer hoạt động khi có cảnh báo.
+-Điều khiển thiết bị thủ công thông qua Website.
 
 ## 9. Cấu trúc dự án
 
