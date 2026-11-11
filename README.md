@@ -6,9 +6,7 @@
   
 -Báo cáo: [Bao_cao_Lab3_De1.docx](https://github.com/user-attachments/files/34674955/Bao_cao_Lab3_De1.docx)
 
-
-
-
+-Video demo:[video_demo.zip](https://github.com/user-attachments/files/34676514/video_demo.zip)
 
 
 1. Giới thiệu dự án
